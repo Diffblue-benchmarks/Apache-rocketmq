@@ -28,7 +28,7 @@
     <name>rocketmq-tools ${project.version}</name>
 
     <properties>
-        <maven.test.skip>true</maven.test.skip>
+        <maven.test.skip>false</maven.test.skip>
     </properties>
 
     <dependencies>
