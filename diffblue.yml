@@ -156,27 +156,33 @@ phases:
       # Set an upper bound on loop unwinding.
       unwind: 6
 units:
- - target:
-   - dir: common/target/classes
-     file: org/apache/rocketmq/common/help/FAQUrl.class
-     sourceDir: common/src/main/java
-     sourceFile: org/apache/rocketmq/common/help/FAQUrl.java
- - target:
-   - dir: common/target/classes
-     file: org/apache/rocketmq/common/sysflag/PullSysFlag.class
-     sourceDir: common/src/main/java
-     sourceFile: org/apache/rocketmq/common/sysflag/PullSysFlag.java
- - target:
-   - dir: common/target/classes
-     file: org/apache/rocketmq/common/filter/impl/Operator.class
-     sourceDir: common/src/main/java
-     sourceFile: org/apache/rocketmq/common/filter/impl/Operator.java
-   - dir: common/target/classes
-     file: org/apache/rocketmq/common/filter/impl/Op.class
-     sourceDir: common/src/main/java
-     sourceFile: org/apache/rocketmq/common/filter/impl/Op.java
- - target:
-   - dir: common/target/classes
-     file: org/apache/rocketmq/common/sysflag/TopicSysFlag.class
-     sourceDir: common/src/main/java
-     sourceFile: org/apache/rocketmq/common/sysflag/TopicSysFlag.java
+  # Target Coverage: Unknown %
+  - target:
+    - dir: common/target/classes
+      file: org/apache/rocketmq/common/UtilAll.class
+      sourceDir: common/src/main/java
+      sourceFile: org/apache/rocketmq/common/UtilAll.java
+    # Child of UtilAll.class
+    # Child Coverage: Unknown %
+    - dir: logging/target/classes
+      file: org/apache/rocketmq/logging/InternalLoggerFactory.class
+      sourceDir: logging/src/main/java
+      sourceFile: org/apache/rocketmq/logging/InternalLoggerFactory.java
+    # Child of UtilAll.class
+    # Child Coverage: Unknown %
+    - dir: logging/target/classes
+      file: org/apache/rocketmq/logging/InternalLogger.class
+      sourceDir: logging/src/main/java
+      sourceFile: org/apache/rocketmq/logging/InternalLogger.java
+    # Child of UtilAll.class
+    # Child Coverage: Unknown %
+    - dir: common/target/classes
+      file: org/apache/rocketmq/common/constant/LoggerName.class
+      sourceDir: common/src/main/java
+      sourceFile: org/apache/rocketmq/common/constant/LoggerName.java
+    # Child of UtilAll.class
+    # Child Coverage: Unknown %
+    - dir: remoting/target/classes
+      file: org/apache/rocketmq/remoting/common/RemotingHelper.class
+      sourceDir: remoting/src/main/java
+      sourceFile: org/apache/rocketmq/remoting/common/RemotingHelper.java
